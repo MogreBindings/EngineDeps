@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0B91F04B-338E-48EC-B6DB-81FEBB0158FE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">FontViewer.dir\Debug\</IntDir>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">FontViewer.dir\Release\</IntDir>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 /fp:fast %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\MyGUIEngine\include;.;..\..\Common;..\..\Common\Base\Ogre;..\..\Platforms\Ogre\OgrePlatform\include;..\..\..\Mogre\Main\OgreSrc\ogre\OgreMain\include;..\..\Common\Input\Win32;..\..\..\Mogre\Main\OgreSrc\ogre\lib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;MYGUI_OGRE_PLATFORM;MYGUI_SAMPLES_INPUT_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>../../build/bin/Debug/FontViewer.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\MyGUIEngine\include;.;..\..\Common;..\..\Common\Base\Ogre;..\..\Platforms\Ogre\OgrePlatform\include;..\..\..\Mogre\Ogre\OgreMain\include;..\..\Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;MYGUI_OGRE_PLATFORM;MYGUI_SAMPLES_INPUT_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;MYGUI_OGRE_PLATFORM;MYGUI_SAMPLES_INPUT_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName>
+      </DllDataFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /STACK:10000000 /machine:I386 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\build\lib\Debug\MyGUIEngine_d.lib;..\..\build\lib\Debug\Common_d.lib;..\..\..\Mogre\Main\OgreSrc\ogre\Dependencies\lib\debug\freetype2311_D.lib;..\..\build\lib\Debug\MyGUI.OgrePlatform_d.lib;..\..\..\Mogre\Main\OgreSrc\ogre\lib\lib\Debug\OgreMain_d.lib</AdditionalDependencies>
+      <OutputFile>..\..\build\bin\Debug\FontViewer.exe</OutputFile>
+      <Version>0.0</Version>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>../../build/bin/Debug/FontViewer.pdb</ProgramDatabaseFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\build\lib\Debug\FontViewer.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 /fp:fast %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\MyGUIEngine\include;.;..\..\Common;..\..\Common\Base\Ogre;..\..\Platforms\Ogre\OgrePlatform\include;..\..\..\Mogre\Main\OgreSrc\ogre\OgreMain\include;..\..\Common\Input\Win32;..\..\..\Mogre\Main\OgreSrc\ogre\lib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;MYGUI_OGRE_PLATFORM;MYGUI_SAMPLES_INPUT_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>../../build/bin/Release/FontViewer.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\MyGUIEngine\include;.;..\..\Common;..\..\Common\Base\Ogre;..\..\Platforms\Ogre\OgrePlatform\include;..\..\..\Mogre\Ogre\OgreMain\include;..\..\Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;MYGUI_OGRE_PLATFORM;MYGUI_SAMPLES_INPUT_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;MYGUI_OGRE_PLATFORM;MYGUI_SAMPLES_INPUT_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName>
+      </DllDataFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /STACK:10000000 /machine:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\build\lib\Release\MyGUIEngine.lib;..\..\build\lib\Release\Common.lib;..\..\..\Mogre\Main\OgreSrc\ogre\Dependencies\lib\release\freetype2311.lib;..\..\build\lib\Release\MyGUI.OgrePlatform.lib;..\..\..\Mogre\Main\OgreSrc\ogre\lib\lib\Release\OgreMain.lib</AdditionalDependencies>
+      <OutputFile>..\..\build\bin\Release\FontViewer.exe</OutputFile>
+      <Version>0.0</Version>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>../../build/bin/Release/FontViewer.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\build\lib\Release\FontViewer.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DemoKeeper.cpp" />
+    <ClCompile Include="FontPanel.cpp" />
+    <ClCompile Include="FontView.cpp" />
+    <ClCompile Include="TextureView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DemoKeeper.h" />
+    <ClInclude Include="FontPanel.h" />
+    <ClInclude Include="FontView.h" />
+    <ClInclude Include="TextureView.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Common\Base\BaseResource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.vcxproj">
+      <Project>{6bd727ac-e738-4fd5-bc0e-4a849a062915}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MyGUIEngine\MyGUIEngine.vcxproj">
+      <Project>{6ac4be87-be69-420e-bc8a-c366addd437b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Platforms\Ogre\OgrePlatform\MyGUI.OgrePlatform.vcxproj">
+      <Project>{8e69ef82-cabe-4635-b657-ca2f9403267b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

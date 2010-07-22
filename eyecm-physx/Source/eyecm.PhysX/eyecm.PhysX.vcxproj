@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1CB6003C-DF6B-4CCC-A5D9-CD9E1012E79B}</ProjectGuid>
+    <RootNamespace>eyecm.PhysX</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)bin\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)bin\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)Customization\;$(ProjectDir)Utility\;$(ProjectDir)Scene\;$(ProjectDir)Physics\;$(ProjectDir)Material\;$(ProjectDir)Shape\;$(ProjectDir)Actor\;$(ProjectDir)Joint\;$(ProjectDir)Mesh\;$(ProjectDir)Cloth\;$(ProjectDir)Fluid\;$(ProjectDir)ForceField\;$(ProjectDir)SoftBody\;$(ProjectDir)Effector\;$(ProjectDir)Character\;$(ProjectDir)..\..\..\PhysX\PhysXLoader\include;$(ProjectDir)..\..\..\PhysX\Foundation\include;$(ProjectDir)..\..\..\PhysX\Physics\include;$(ProjectDir)..\..\..\PhysX\Physics\include\cloth;$(ProjectDir)..\..\..\PhysX\Physics\include\fluids;$(ProjectDir)..\..\..\PhysX\Physics\include\softbody;$(ProjectDir)..\..\..\PhysX\Cooking\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>$(SolutionDir)bin\$(Configuration)\;$(ProjectDir)..\..\..\Mogre\Main\lib\Release;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <PreprocessorDefinitions>UserCustomization="custom.mogre.h";WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput>
+      </AssemblerOutput>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\PhysX\lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)Customization\;$(ProjectDir)Utility\;$(ProjectDir)Scene\;$(ProjectDir)Physics\;$(ProjectDir)Material\;$(ProjectDir)Shape\;$(ProjectDir)Actor\;$(ProjectDir)Joint\;$(ProjectDir)Mesh\;$(ProjectDir)Cloth\;$(ProjectDir)Fluid\;$(ProjectDir)ForceField\;$(ProjectDir)SoftBody\;$(ProjectDir)Effector\;$(ProjectDir)Character\;$(ProjectDir)..\..\..\PhysX\PhysXLoader\include;$(ProjectDir)..\..\..\PhysX\Foundation\include;$(ProjectDir)..\..\..\PhysX\Physics\include;$(ProjectDir)..\..\..\PhysX\Physics\include\cloth;$(ProjectDir)..\..\..\PhysX\Physics\include\fluids;$(ProjectDir)..\..\..\PhysX\Physics\include\softbody;$(ProjectDir)..\..\..\PhysX\Cooking\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>$(SolutionDir)bin\$(Configuration)\;$(ProjectDir)..\..\..\Mogre\Main\lib\Release;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <PreprocessorDefinitions>UserCustomization="custom.mogre.h";WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\PhysX\lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Scene\RaycastObjects.h" />
+    <ClInclude Include="Scene\SceneDesc.h" />
+    <ClInclude Include="Scene\Scene.h" />
+    <ClInclude Include="Scene\Scene.Limits.h" />
+    <ClInclude Include="Scene\Scene.List.h" />
+    <ClInclude Include="Scene\Scene.Overlap.h" />
+    <ClInclude Include="Scene\Scene.Pairs.h" />
+    <ClInclude Include="Scene\Scene.Raycast.h" />
+    <ClInclude Include="Scene\Scene.Report.h" />
+    <ClInclude Include="Scene\Scene.Timing.h" />
+    <ClInclude Include="Shape\ShapeDesc.h" />
+    <ClInclude Include="Shape\Shape.Flags.h" />
+    <ClInclude Include="Shape\Shape.h" />
+    <ClInclude Include="Actor\Actor.h" />
+    <ClInclude Include="Actor\ActorDesc.h" />
+    <ClInclude Include="Actor\BodyDesc.h" />
+    <ClInclude Include="Material\Material.h" />
+    <ClInclude Include="Debugger.h" />
+    <ClInclude Include="Physics\Physics.h" />
+    <ClInclude Include="Physics\Physics.Parameters.h" />
+    <ClInclude Include="Physics\PhysicsCollection.h" />
+    <ClInclude Include="Utility\convert.h" />
+    <ClInclude Include="Utility\Enums.h" />
+    <ClInclude Include="Utility\errorstream.h" />
+    <ClInclude Include="Utility\eyecmPhysX.h" />
+    <ClInclude Include="Utility\Interfaces.h" />
+    <ClInclude Include="Utility\macros.h" />
+    <ClInclude Include="Utility\macros.pin.h" />
+    <ClInclude Include="Utility\macros.proxy.h" />
+    <ClInclude Include="Utility\nxarraylist.h" />
+    <ClInclude Include="Utility\nxenumerable.h" />
+    <ClInclude Include="Utility\nxlist.h" />
+    <ClInclude Include="Utility\nxobject.h" />
+    <ClInclude Include="Utility\nxstreamrw.h" />
+    <ClInclude Include="Utility\userentityreport.h" />
+    <ClInclude Include="Joint\Joint.h" />
+    <ClInclude Include="Joint\JointDesc.h" />
+    <ClInclude Include="Joint\MiscDesc.h" />
+    <ClInclude Include="Cooking\Cooking.h" />
+    <ClInclude Include="Mesh\ClothMesh.h" />
+    <ClInclude Include="Mesh\ConvexMesh.h" />
+    <ClInclude Include="Mesh\HeightField.h" />
+    <ClInclude Include="Mesh\MeshData.h" />
+    <ClInclude Include="Mesh\SimpleTriangleMesh.h" />
+    <ClInclude Include="Mesh\SoftBodyMesh.h" />
+    <ClInclude Include="Mesh\TriangleMesh.h" />
+    <ClInclude Include="Cloth\Cloth.h" />
+    <ClInclude Include="Cloth\ClothDesc.h" />
+    <ClInclude Include="Fluid\Fluid.h" />
+    <ClInclude Include="Fluid\FluidDesc.h" />
+    <ClInclude Include="Fluid\FluidEmitter.h" />
+    <ClInclude Include="Fluid\ParticleData.h" />
+    <ClInclude Include="SoftBody\SoftBody.h" />
+    <ClInclude Include="SoftBody\SoftBodyDesc.h" />
+    <ClInclude Include="SoftBody\SoftBodySplitPair.h" />
+    <ClInclude Include="Effector\Effector.h" />
+    <ClInclude Include="Effector\EffectorDesc.h" />
+    <ClInclude Include="ForceField\ForceField.h" />
+    <ClInclude Include="ForceField\ForceFieldDesc.h" />
+    <ClInclude Include="ForceField\ForceFieldKernel.h" />
+    <ClInclude Include="ForceField\ForceFieldShape.h" />
+    <ClInclude Include="ForceField\ForceFieldShapeDesc.h" />
+    <ClInclude Include="ForceField\ForceFieldShapeGroup.h" />
+    <ClInclude Include="Character\Controller.h" />
+    <ClInclude Include="Character\ControllerManager.h" />
+    <ClInclude Include="Stdafx.h" />
+    <ClInclude Include="Customization\convert.example.h" />
+    <ClInclude Include="Customization\custom.example.h" />
+    <ClInclude Include="Customization\convert.demos.h" />
+    <ClInclude Include="Customization\convert.eyecm.h" />
+    <ClInclude Include="Customization\convert.mogre.h" />
+    <ClInclude Include="Customization\convert.slimdx.h" />
+    <ClInclude Include="Customization\convert.tv3d.h" />
+    <ClInclude Include="Customization\convert.xna.h" />
+    <ClInclude Include="Customization\custom.demos.h" />
+    <ClInclude Include="Customization\custom.eyecm.h" />
+    <ClInclude Include="Customization\custom.mogre.h" />
+    <ClInclude Include="Customization\custom.slimdx.h" />
+    <ClInclude Include="Customization\custom.tv3d.h" />
+    <ClInclude Include="Customization\custom.xna.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Scene\Scene.ActiveTransforms.cpp" />
+    <ClCompile Include="Scene\Scene.cpp" />
+    <ClCompile Include="Scene\Scene.DebugRenderable.cpp" />
+    <ClCompile Include="Scene\Scene.List.cpp" />
+    <ClCompile Include="Scene\Scene.Overlap.cpp" />
+    <ClCompile Include="Scene\Scene.Raycast.cpp" />
+    <ClCompile Include="Scene\SceneQuery.cpp" />
+    <ClCompile Include="Scene\Scene.Report.ContactModify.cpp" />
+    <ClCompile Include="Scene\Scene.Report.ContactReport.cpp" />
+    <ClCompile Include="Scene\Scene.Report.cpp" />
+    <ClCompile Include="Scene\Scene.Report.FluidUserNotify.cpp" />
+    <ClCompile Include="Scene\Scene.Report.PairFiltering.cpp" />
+    <ClCompile Include="Scene\Scene.Report.Trigger.cpp" />
+    <ClCompile Include="Scene\Scene.Report.UserNotify.cpp" />
+    <ClCompile Include="Shape\Shape.cpp" />
+    <ClCompile Include="Shape\Shape.Wheel.cpp" />
+    <ClCompile Include="Shape\ShapeDesc.cpp" />
+    <ClCompile Include="Actor\Actor.cpp" />
+    <ClCompile Include="Material\Material.cpp" />
+    <ClCompile Include="Physics\NxuErrorReport.cpp" />
+    <ClCompile Include="Physics\NxuNotify.cpp" />
+    <ClCompile Include="Physics\Phsyics.List.cpp" />
+    <ClCompile Include="Physics\Physics.cpp" />
+    <ClCompile Include="Physics\PhysicsCollection.cpp" />
+    <ClCompile Include="Utility\userallocator.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Joint\Joint.cpp" />
+    <ClCompile Include="Joint\JointDesc.cpp" />
+    <ClCompile Include="Cooking\Cooking.Cloth.cpp" />
+    <ClCompile Include="Cooking\Cooking.Convex.cpp" />
+    <ClCompile Include="Cooking\Cooking.Mesh.cpp" />
+    <ClCompile Include="Cooking\Cooking.SoftBody.cpp" />
+    <ClCompile Include="Mesh\CCDSkeleton.cpp" />
+    <ClCompile Include="Mesh\ClothMesh.cpp" />
+    <ClCompile Include="Mesh\ConvexMesh.cpp" />
+    <ClCompile Include="Mesh\HeightField.cpp" />
+    <ClCompile Include="Mesh\MeshData.cpp" />
+    <ClCompile Include="Mesh\SimpleTriangleMesh.cpp" />
+    <ClCompile Include="Mesh\SoftBodyMesh.cpp" />
+    <ClCompile Include="Mesh\TriangleMesh.cpp" />
+    <ClCompile Include="Cloth\Cloth.cpp" />
+    <ClCompile Include="Fluid\Fluid.cpp" />
+    <ClCompile Include="Fluid\FluidEmitter.cpp" />
+    <ClCompile Include="Fluid\ParticleData.cpp" />
+    <ClCompile Include="SoftBody\SoftBody.cpp" />
+    <ClCompile Include="SoftBody\SoftBodySplitPair.cpp" />
+    <ClCompile Include="Effector\Effector.cpp" />
+    <ClCompile Include="ForceField\ForceField.cpp" />
+    <ClCompile Include="ForceField\ForceFieldKernel.cpp" />
+    <ClCompile Include="ForceField\ForceFieldShape.cpp" />
+    <ClCompile Include="ForceField\ForceFieldShapeDesc.cpp" />
+    <ClCompile Include="ForceField\ForceFieldShapeGroup.cpp" />
+    <ClCompile Include="Character\Controller.cpp" />
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Character\NxCharacter\NxCharacter.vcxproj">
+      <Project>{f4ff8039-fce5-4771-86ce-68a9d7e95c97}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Physics\NxuStream\NxuStream.vcxproj">
+      <Project>{6f6a4809-e9c6-4e38-b66e-9791b7dda471}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

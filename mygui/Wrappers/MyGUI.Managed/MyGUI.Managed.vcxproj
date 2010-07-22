@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>MyGUI</ProjectName>
+    <ProjectGuid>{9EBA1113-C11A-41B4-9674-3D83E6067B2E}</ProjectGuid>
+    <RootNamespace>MyGUI.Managed</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../build/bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../build/bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Common;..\..\MyGUIEngine\include;..\..\Platforms\Ogre\OgrePlatform\include;..\..\..\Mogre\Main\OgreSrc\ogre\OgreMain\include;..\..\..\Mogre\Main\OgreSrc\ogre\lib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>MyGUIEngine_d.lib;MyGUI.OgrePlatform_d.lib;OgreMain_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>../../build/lib/$(Configuration);../../../Mogre/Main\OgreSrc\ogre\lib\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Common;..\..\MyGUIEngine\include;..\..\Platforms\Ogre\OgrePlatform\include;..\..\..\Mogre\Main\OgreSrc\ogre\OgreMain\include;..\..\..\Mogre\Main\OgreSrc\ogre\lib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>MyGUIEngine.lib;MyGUI.OgrePlatform.lib;OgreMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../build/lib/$(Configuration);../../../Mogre/Main\OgreSrc\ogre\lib\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="Gui.cpp" />
+    <ClCompile Include="Generate\MyGUI.Managed_MarshalingWidget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Delegate1.h" />
+    <ClInclude Include="Delegate2.h" />
+    <ClInclude Include="Delegate3.h" />
+    <ClInclude Include="Delegate3_Ref2.h" />
+    <ClInclude Include="Delegate4.h" />
+    <ClInclude Include="Delegate5.h" />
+    <ClInclude Include="Delegates.h" />
+    <ClInclude Include="Align.h" />
+    <ClInclude Include="Colour.h" />
+    <ClInclude Include="DropItemState.h" />
+    <ClInclude Include="DropWidgetState.h" />
+    <ClInclude Include="FloatCoord.h" />
+    <ClInclude Include="FloatPoint.h" />
+    <ClInclude Include="FloatRect.h" />
+    <ClInclude Include="FloatSize.h" />
+    <ClInclude Include="IntCoord.h" />
+    <ClInclude Include="IntPoint.h" />
+    <ClInclude Include="IntRect.h" />
+    <ClInclude Include="IntSize.h" />
+    <ClInclude Include="ItemDropInfo.h" />
+    <ClInclude Include="ItemInfo.h" />
+    <ClInclude Include="KeyCode.h" />
+    <ClInclude Include="MenuItemType.h" />
+    <ClInclude Include="MessageStyle.h" />
+    <ClInclude Include="MouseButton.h" />
+    <ClInclude Include="NativePtrHolder.h" />
+    <ClInclude Include="NotifyItemData.h" />
+    <ClInclude Include="ToolTipInfo.h" />
+    <ClInclude Include="WidgetStyle.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="Marshaling.h" />
+    <ClInclude Include="Types.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="WidgetHolder.h" />
+    <ClInclude Include="Gui.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_GuiFactory.h" />
+    <ClInclude Include="BaseWidget.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_Button.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_ComboBox.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_DDContainer.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_EditBox.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_HScrollBar.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_IncludeWidgets.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_ItemBox.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_ListBox.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_MarshalingWidget.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_MenuBar.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_MenuCtrl.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_MenuItem.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_MessageBox.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_MultiListBox.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_PopupMenu.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_ProgressBar.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_RenderBox.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_ScrollView.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_StaticImage.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_StaticText.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_TabBar.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_TabItem.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_VScrollBar.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_Widget.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_WidgetCropped.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_WidgetEvent.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_WidgetUserData.h" />
+    <ClInclude Include="Generate\MyGUI.Managed_Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MyGUIEngine\MyGUIEngine.vcxproj">
+      <Project>{6ac4be87-be69-420e-bc8a-c366addd437b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

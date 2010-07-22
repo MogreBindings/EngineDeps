@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8e0f369b-cb53-4b9e-9b06-2a18509eb546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2182bd20-638a-4dbc-a949-5c5d2b36b11f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{d3f9fd17-c4e7-44d9-aac2-acb2a2d87449}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlDocument.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClassHolder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Compound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enumerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ITypeHolder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Member.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemberFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemberVariable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringUtility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlDocument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\BoxController.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CapsuleController.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CCTAllocator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CCTDebugRenderer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CharacterController.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CharacterControllerManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Controller.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ControllerManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NxBoxController.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NxCapsuleController.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NxCharacter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NxController.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NxControllerManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NxExtended.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SweptBox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SweptCapsule.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SweptVolume.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\BoxController.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CapsuleController.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CCTDebugRenderer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CharacterController.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CharacterControllerCallbacks.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CharacterControllerManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Controller.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NxCharacter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SweptBox.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SweptCapsule.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SweptVolume.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

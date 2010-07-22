@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eyecm.PhysX.Demos", "Source\eyecm.PhysX.Demos\eyecm.PhysX.Demos.csproj", "{A863F454-108A-4076-A95E-34EC8849AC18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eyecm.PhysX.Demos.Math", "Source\eyecm.PhysX.Demos\eyecm.PhysX.Demos.Math\eyecm.PhysX.Demos.Math.csproj", "{E3C8FE7A-F459-4065-BAFF-CAA51699F31F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.BasicCubes", "Source\eyecm.PhysX.Demos\Demo.BasicCubes\Demo.BasicCubes.csproj", "{59E8331C-803B-443C-9623-72E06B9042F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.ExecutiveToy", "Source\eyecm.PhysX.Demos\Demo.ExecutiveToy\Demo.ExecutiveToy.csproj", "{59E8331C-803B-443C-9623-72E06B9042F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug demos|x86 = Debug demos|x86
+		Release demos|x86 = Release demos|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A863F454-108A-4076-A95E-34EC8849AC18}.Debug demos|x86.ActiveCfg = Debug demos|x86
+		{A863F454-108A-4076-A95E-34EC8849AC18}.Debug demos|x86.Build.0 = Debug demos|x86
+		{A863F454-108A-4076-A95E-34EC8849AC18}.Release demos|x86.ActiveCfg = Release demos|x86
+		{E3C8FE7A-F459-4065-BAFF-CAA51699F31F}.Debug demos|x86.ActiveCfg = Debug demos|x86
+		{E3C8FE7A-F459-4065-BAFF-CAA51699F31F}.Debug demos|x86.Build.0 = Debug demos|x86
+		{E3C8FE7A-F459-4065-BAFF-CAA51699F31F}.Release demos|x86.ActiveCfg = Release demos|x86
+		{59E8331C-803B-443C-9623-72E06B9042F8}.Debug demos|x86.ActiveCfg = Debug demos|x86
+		{59E8331C-803B-443C-9623-72E06B9042F8}.Debug demos|x86.Build.0 = Debug demos|x86
+		{59E8331C-803B-443C-9623-72E06B9042F8}.Release demos|x86.ActiveCfg = Release demos|x86
+		{59E8331C-803B-443C-9623-72E06B9042F8}.Release demos|x86.Build.0 = Release demos|x86
+		{59E8331C-803B-443C-9623-72E06B9042F9}.Debug demos|x86.ActiveCfg = Debug demos|x86
+		{59E8331C-803B-443C-9623-72E06B9042F9}.Debug demos|x86.Build.0 = Debug demos|x86
+		{59E8331C-803B-443C-9623-72E06B9042F9}.Release demos|x86.ActiveCfg = Release demos|x86
+		{59E8331C-803B-443C-9623-72E06B9042F9}.Release demos|x86.Build.0 = Release demos|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

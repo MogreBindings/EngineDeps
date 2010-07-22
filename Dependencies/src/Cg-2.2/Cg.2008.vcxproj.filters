@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Dll Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Dll Files\x64">
+      <UniqueIdentifier>{4b5c91fc-f2a3-407b-9b8d-b447f1a55822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dll Files\Win32">
+      <UniqueIdentifier>{05e72b8d-d9dd-4e17-9e6c-faad6f99c110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Lib Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Lib Files\Win32">
+      <UniqueIdentifier>{82248802-ae43-48f7-a4d9-14a23b9b76c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib Files\x64">
+      <UniqueIdentifier>{b18ed2b0-ca2e-4460-a8d0-989ec68f06ae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin.x64\cg.dll">
+      <Filter>Dll Files\x64</Filter>
+    </None>
+    <None Include="bin\cg.dll">
+      <Filter>Dll Files\Win32</Filter>
+    </None>
+    <None Include="license.txt" />
+    <None Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Cg\cg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Cg\cg_bindlocations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Cg\cg_datatypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Cg\cg_enums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Cg\cg_errors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Cg\cg_profiles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Cg\cgGL_profiles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\cg.lib">
+      <Filter>Lib Files\Win32</Filter>
+    </Library>
+    <Library Include="lib.x64\cg.lib">
+      <Filter>Lib Files\x64</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

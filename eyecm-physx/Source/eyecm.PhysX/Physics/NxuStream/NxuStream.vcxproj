@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6F6A4809-E9C6-4E38-B66E-9791B7DDA471}</ProjectGuid>
+    <RootNamespace>NxuStream</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)bin\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)bin\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\PhysX\PhysXLoader\include;$(ProjectDir)..\..\..\..\..\PhysX\Foundation\include;$(ProjectDir)..\..\..\..\..\PhysX\Physics\include;$(ProjectDir)..\..\..\..\..\PhysX\Physics\include\cloth;$(ProjectDir)..\..\..\..\..\PhysX\Physics\include\fluids;$(ProjectDir)..\..\..\..\..\PhysX\Physics\include\softbody;$(ProjectDir)..\..\..\..\..\PhysX\Cooking\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\PhysX\PhysXLoader\include;$(ProjectDir)..\..\..\..\..\PhysX\Foundation\include;$(ProjectDir)..\..\..\..\..\PhysX\Physics\include;$(ProjectDir)..\..\..\..\..\PhysX\Physics\include\cloth;$(ProjectDir)..\..\..\..\..\PhysX\Physics\include\fluids;$(ProjectDir)..\..\..\..\..\PhysX\Physics\include\softbody;$(ProjectDir)..\..\..\..\..\PhysX\Cooking\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="NXU_Asc2Bin.cpp" />
+    <ClCompile Include="NXU_ColladaExport.cpp" />
+    <ClCompile Include="NXU_ColladaImport.cpp" />
+    <ClCompile Include="NXU_cooking.cpp" />
+    <ClCompile Include="NXU_customcopy.cpp" />
+    <ClCompile Include="NXU_File.cpp" />
+    <ClCompile Include="NXU_Geometry.cpp" />
+    <ClCompile Include="NXU_GraphicsMesh.cpp" />
+    <ClCompile Include="NXU_helper.cpp" />
+    <ClCompile Include="NXU_hull.cpp" />
+    <ClCompile Include="NXU_PhysicsExport.cpp" />
+    <ClCompile Include="NXU_PhysicsInstantiator.cpp" />
+    <ClCompile Include="NXU_ScaledCopy.cpp" />
+    <ClCompile Include="NXU_schema.cpp" />
+    <ClCompile Include="NXU_SchemaStream.cpp" />
+    <ClCompile Include="NXU_Streaming.cpp" />
+    <ClCompile Include="NXU_string.cpp" />
+    <ClCompile Include="NXU_tinystr.cpp" />
+    <ClCompile Include="NXU_tinyxml.cpp" />
+    <ClCompile Include="NXU_tinyxmlerror.cpp" />
+    <ClCompile Include="NXU_tinyxmlparser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NXU_Asc2Bin.h" />
+    <ClInclude Include="NXU_ColladaExport.h" />
+    <ClInclude Include="NXU_ColladaImport.h" />
+    <ClInclude Include="NXU_cooking.h" />
+    <ClInclude Include="NXU_customcopy.h" />
+    <ClInclude Include="NXU_File.h" />
+    <ClInclude Include="NXU_Geometry.h" />
+    <ClInclude Include="NXU_GraphicsMesh.h" />
+    <ClInclude Include="NXU_helper.h" />
+    <ClInclude Include="NXU_hull.h" />
+    <ClInclude Include="NXU_PhysicsExport.h" />
+    <ClInclude Include="NXU_PhysicsInstantiator.h" />
+    <ClInclude Include="NXU_ScaledCopy.h" />
+    <ClInclude Include="NXU_schema.h" />
+    <ClInclude Include="NXU_SchemaStream.h" />
+    <ClInclude Include="NXU_SchemaTypes.h" />
+    <ClInclude Include="NXU_Streaming.h" />
+    <ClInclude Include="NXU_string.h" />
+    <ClInclude Include="NXU_tinystr.h" />
+    <ClInclude Include="NXU_tinyxml.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

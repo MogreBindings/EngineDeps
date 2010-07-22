@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="SDK\Scene">
+      <UniqueIdentifier>{66680f6f-0edf-4572-af55-0e5aeb19d369}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Scene\Scene.h">
+      <UniqueIdentifier>{44378c34-7134-4e39-9c4a-580ab57b940e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Scene\Report">
+      <UniqueIdentifier>{061f33e8-2d69-4eae-989e-15fb15482479}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Shape">
+      <UniqueIdentifier>{5d82499b-f07b-4953-aa50-7cb0a2db182d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Shape\Shape.h">
+      <UniqueIdentifier>{d0bf7404-b295-4c06-9504-2eaff1c3d4cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Actor">
+      <UniqueIdentifier>{3e02f6e3-9ac3-4d11-a132-e2badd2cdea5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Material">
+      <UniqueIdentifier>{cb191086-32d6-4f95-a411-e3d7ac9cba7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Physics">
+      <UniqueIdentifier>{e437163e-c682-4b1d-a488-ace4d0c12818}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Utility">
+      <UniqueIdentifier>{3e802fc0-10a7-41d6-b136-571ddee94d10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Joint">
+      <UniqueIdentifier>{21ea37df-b724-42dc-9ce1-d24c55638f95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Cooking">
+      <UniqueIdentifier>{da67b63f-e7b4-4317-aeb2-ceb7bfa9f607}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Mesh">
+      <UniqueIdentifier>{3ec786a7-5f54-406b-b543-2501b9a9d51c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Cloth">
+      <UniqueIdentifier>{8beb9fe7-2b2b-4e3c-a33c-c3ed48dc1ef8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Fluid">
+      <UniqueIdentifier>{57563133-c1c4-40b4-a74f-695d69583e80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\SoftBody">
+      <UniqueIdentifier>{d93b6b37-1eb7-4d34-a279-81528faa520d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Effector">
+      <UniqueIdentifier>{d1a0ddc5-dcfd-4faf-bab0-2de8c4460903}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\ForceField">
+      <UniqueIdentifier>{5eb9d9ab-1d5c-442c-add7-93b0f482cab5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Character">
+      <UniqueIdentifier>{414b5351-3312-4157-8be9-077bd331993a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assembly">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Customization">
+      <UniqueIdentifier>{aca87561-5bb0-40cb-b90d-1eae70418f61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Customization\Other">
+      <UniqueIdentifier>{79ac23f7-5081-4013-8329-ff23b6d35f5c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Scene\RaycastObjects.h">
+      <Filter>SDK\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneDesc.h">
+      <Filter>SDK\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.h">
+      <Filter>SDK\Scene\Scene.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.Limits.h">
+      <Filter>SDK\Scene\Scene.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.List.h">
+      <Filter>SDK\Scene\Scene.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.Overlap.h">
+      <Filter>SDK\Scene\Scene.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.Pairs.h">
+      <Filter>SDK\Scene\Scene.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.Raycast.h">
+      <Filter>SDK\Scene\Scene.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.Report.h">
+      <Filter>SDK\Scene\Scene.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.Timing.h">
+      <Filter>SDK\Scene\Scene.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape\ShapeDesc.h">
+      <Filter>SDK\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape\Shape.Flags.h">
+      <Filter>SDK\Shape\Shape.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape\Shape.h">
+      <Filter>SDK\Shape\Shape.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor\Actor.h">
+      <Filter>SDK\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor\ActorDesc.h">
+      <Filter>SDK\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor\BodyDesc.h">
+      <Filter>SDK\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Material\Material.h">
+      <Filter>SDK\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Debugger.h">
+      <Filter>SDK\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\Physics.h">
+      <Filter>SDK\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\Physics.Parameters.h">
+      <Filter>SDK\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\PhysicsCollection.h">
+      <Filter>SDK\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\convert.h">
+      <Filter>SDK\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Enums.h">
+      <Filter>SDK\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\errorstream.h">
+      <Filter>SDK\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\eyecmPhysX.h">
+      <Filter>SDK\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Interfaces.h">
+      <Filter>SDK\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\macros.h">
+      <Filter>SDK\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\macros.pin.h">
+      <Filter>SDK\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\macros.proxy.h">
+      <Filter>SDK\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\nxarraylist.h">
+      <Filter>SDK\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\nxenumerable.h">
+      <Filter>SDK\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\nxlist.h">
+      <Filter>SDK\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\nxobject.h">
+      <Filter>SDK\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\nxstreamrw.h">
+      <Filter>SDK\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\userentityreport.h">
+      <Filter>SDK\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Joint\Joint.h">
+      <Filter>SDK\Joint</Filter>
+    </ClInclude>
+    <ClInclude Include="Joint\JointDesc.h">
+      <Filter>SDK\Joint</Filter>
+    </ClInclude>
+    <ClInclude Include="Joint\MiscDesc.h">
+      <Filter>SDK\Joint</Filter>
+    </ClInclude>
+    <ClInclude Include="Cooking\Cooking.h">
+      <Filter>SDK\Cooking</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh\ClothMesh.h">
+      <Filter>SDK\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh\ConvexMesh.h">
+      <Filter>SDK\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh\HeightField.h">
+      <Filter>SDK\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh\MeshData.h">
+      <Filter>SDK\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh\SimpleTriangleMesh.h">
+      <Filter>SDK\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh\SoftBodyMesh.h">
+      <Filter>SDK\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh\TriangleMesh.h">
+      <Filter>SDK\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Cloth\Cloth.h">
+      <Filter>SDK\Cloth</Filter>
+    </ClInclude>
+    <ClInclude Include="Cloth\ClothDesc.h">
+      <Filter>SDK\Cloth</Filter>
+    </ClInclude>
+    <ClInclude Include="Fluid\Fluid.h">
+      <Filter>SDK\Fluid</Filter>
+    </ClInclude>
+    <ClInclude Include="Fluid\FluidDesc.h">
+      <Filter>SDK\Fluid</Filter>
+    </ClInclude>
+    <ClInclude Include="Fluid\FluidEmitter.h">
+      <Filter>SDK\Fluid</Filter>
+    </ClInclude>
+    <ClInclude Include="Fluid\ParticleData.h">
+      <Filter>SDK\Fluid</Filter>
+    </ClInclude>
+    <ClInclude Include="SoftBody\SoftBody.h">
+      <Filter>SDK\SoftBody</Filter>
+    </ClInclude>
+    <ClInclude Include="SoftBody\SoftBodyDesc.h">
+      <Filter>SDK\SoftBody</Filter>
+    </ClInclude>
+    <ClInclude Include="SoftBody\SoftBodySplitPair.h">
+      <Filter>SDK\SoftBody</Filter>
+    </ClInclude>
+    <ClInclude Include="Effector\Effector.h">
+      <Filter>SDK\Effector</Filter>
+    </ClInclude>
+    <ClInclude Include="Effector\EffectorDesc.h">
+      <Filter>SDK\Effector</Filter>
+    </ClInclude>
+    <ClInclude Include="ForceField\ForceField.h">
+      <Filter>SDK\ForceField</Filter>
+    </ClInclude>
+    <ClInclude Include="ForceField\ForceFieldDesc.h">
+      <Filter>SDK\ForceField</Filter>
+    </ClInclude>
+    <ClInclude Include="ForceField\ForceFieldKernel.h">
+      <Filter>SDK\ForceField</Filter>
+    </ClInclude>
+    <ClInclude Include="ForceField\ForceFieldShape.h">
+      <Filter>SDK\ForceField</Filter>
+    </ClInclude>
+    <ClInclude Include="ForceField\ForceFieldShapeDesc.h">
+      <Filter>SDK\ForceField</Filter>
+    </ClInclude>
+    <ClInclude Include="ForceField\ForceFieldShapeGroup.h">
+      <Filter>SDK\ForceField</Filter>
+    </ClInclude>
+    <ClInclude Include="Character\Controller.h">
+      <Filter>SDK\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Character\ControllerManager.h">
+      <Filter>SDK\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Stdafx.h">
+      <Filter>Assembly</Filter>
+    </ClInclude>
+    <ClInclude Include="Customization\convert.example.h">
+      <Filter>Customization</Filter>
+    </ClInclude>
+    <ClInclude Include="Customization\custom.example.h">
+      <Filter>Customization</Filter>
+    </ClInclude>
+    <ClInclude Include="Customization\convert.demos.h">
+      <Filter>Customization\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Customization\convert.eyecm.h">
+      <Filter>Customization\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Customization\convert.mogre.h">
+      <Filter>Customization\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Customization\convert.slimdx.h">
+      <Filter>Customization\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Customization\convert.tv3d.h">
+      <Filter>Customization\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Customization\convert.xna.h">
+      <Filter>Customization\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Customization\custom.demos.h">
+      <Filter>Customization\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Customization\custom.eyecm.h">
+      <Filter>Customization\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Customization\custom.mogre.h">
+      <Filter>Customization\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Customization\custom.slimdx.h">
+      <Filter>Customization\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Customization\custom.tv3d.h">
+      <Filter>Customization\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Customization\custom.xna.h">
+      <Filter>Customization\Other</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Scene\Scene.ActiveTransforms.cpp">
+      <Filter>SDK\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.cpp">
+      <Filter>SDK\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.DebugRenderable.cpp">
+      <Filter>SDK\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.List.cpp">
+      <Filter>SDK\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.Overlap.cpp">
+      <Filter>SDK\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.Raycast.cpp">
+      <Filter>SDK\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneQuery.cpp">
+      <Filter>SDK\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.Report.ContactModify.cpp">
+      <Filter>SDK\Scene\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.Report.ContactReport.cpp">
+      <Filter>SDK\Scene\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.Report.cpp">
+      <Filter>SDK\Scene\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.Report.FluidUserNotify.cpp">
+      <Filter>SDK\Scene\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.Report.PairFiltering.cpp">
+      <Filter>SDK\Scene\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.Report.Trigger.cpp">
+      <Filter>SDK\Scene\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.Report.UserNotify.cpp">
+      <Filter>SDK\Scene\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape\Shape.cpp">
+      <Filter>SDK\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape\Shape.Wheel.cpp">
+      <Filter>SDK\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape\ShapeDesc.cpp">
+      <Filter>SDK\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor\Actor.cpp">
+      <Filter>SDK\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Material\Material.cpp">
+      <Filter>SDK\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\NxuErrorReport.cpp">
+      <Filter>SDK\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\NxuNotify.cpp">
+      <Filter>SDK\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\Phsyics.List.cpp">
+      <Filter>SDK\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\Physics.cpp">
+      <Filter>SDK\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\PhysicsCollection.cpp">
+      <Filter>SDK\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\userallocator.cpp">
+      <Filter>SDK\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Joint\Joint.cpp">
+      <Filter>SDK\Joint</Filter>
+    </ClCompile>
+    <ClCompile Include="Joint\JointDesc.cpp">
+      <Filter>SDK\Joint</Filter>
+    </ClCompile>
+    <ClCompile Include="Cooking\Cooking.Cloth.cpp">
+      <Filter>SDK\Cooking</Filter>
+    </ClCompile>
+    <ClCompile Include="Cooking\Cooking.Convex.cpp">
+      <Filter>SDK\Cooking</Filter>
+    </ClCompile>
+    <ClCompile Include="Cooking\Cooking.Mesh.cpp">
+      <Filter>SDK\Cooking</Filter>
+    </ClCompile>
+    <ClCompile Include="Cooking\Cooking.SoftBody.cpp">
+      <Filter>SDK\Cooking</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh\CCDSkeleton.cpp">
+      <Filter>SDK\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh\ClothMesh.cpp">
+      <Filter>SDK\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh\ConvexMesh.cpp">
+      <Filter>SDK\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh\HeightField.cpp">
+      <Filter>SDK\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh\MeshData.cpp">
+      <Filter>SDK\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh\SimpleTriangleMesh.cpp">
+      <Filter>SDK\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh\SoftBodyMesh.cpp">
+      <Filter>SDK\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh\TriangleMesh.cpp">
+      <Filter>SDK\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Cloth\Cloth.cpp">
+      <Filter>SDK\Cloth</Filter>
+    </ClCompile>
+    <ClCompile Include="Fluid\Fluid.cpp">
+      <Filter>SDK\Fluid</Filter>
+    </ClCompile>
+    <ClCompile Include="Fluid\FluidEmitter.cpp">
+      <Filter>SDK\Fluid</Filter>
+    </ClCompile>
+    <ClCompile Include="Fluid\ParticleData.cpp">
+      <Filter>SDK\Fluid</Filter>
+    </ClCompile>
+    <ClCompile Include="SoftBody\SoftBody.cpp">
+      <Filter>SDK\SoftBody</Filter>
+    </ClCompile>
+    <ClCompile Include="SoftBody\SoftBodySplitPair.cpp">
+      <Filter>SDK\SoftBody</Filter>
+    </ClCompile>
+    <ClCompile Include="Effector\Effector.cpp">
+      <Filter>SDK\Effector</Filter>
+    </ClCompile>
+    <ClCompile Include="ForceField\ForceField.cpp">
+      <Filter>SDK\ForceField</Filter>
+    </ClCompile>
+    <ClCompile Include="ForceField\ForceFieldKernel.cpp">
+      <Filter>SDK\ForceField</Filter>
+    </ClCompile>
+    <ClCompile Include="ForceField\ForceFieldShape.cpp">
+      <Filter>SDK\ForceField</Filter>
+    </ClCompile>
+    <ClCompile Include="ForceField\ForceFieldShapeDesc.cpp">
+      <Filter>SDK\ForceField</Filter>
+    </ClCompile>
+    <ClCompile Include="ForceField\ForceFieldShapeGroup.cpp">
+      <Filter>SDK\ForceField</Filter>
+    </ClCompile>
+    <ClCompile Include="Character\Controller.cpp">
+      <Filter>SDK\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>Assembly</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>Assembly</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

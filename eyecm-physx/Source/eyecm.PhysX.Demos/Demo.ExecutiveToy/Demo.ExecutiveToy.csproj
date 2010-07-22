@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug demos</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{59E8331C-803B-443C-9623-72E06B9042F9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Demo.ExecutiveToy</RootNamespace>
+    <AssemblyName>Demo.ExecutiveToy</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\$(AssemblyName)</OutputPath>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug demos|X86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release demos|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Reference Include="eyecm.PhysX, Version=1.0.3033.34776, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SolutionDir)bin\$(ConfigurationName)\eyecm.PhysX\eyecm.PhysX.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExecutiveToy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eyecm.PhysX.Demos.csproj">
+      <Project>{A863F454-108A-4076-A95E-34EC8849AC18}</Project>
+      <Name>eyecm.PhysX.Demos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eyecm.PhysX.Demos.Math\eyecm.PhysX.Demos.Math.csproj">
+      <Project>{E3C8FE7A-F459-4065-BAFF-CAA51699F31F}</Project>
+      <Name>eyecm.PhysX.Demos.Math</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Tao.FreeGlut, Version=2.4.0.2, Culture=neutral, PublicKeyToken=6e602a6ad6c0d06d, processorArchitecture=MSIL" />
+    <Reference Include="Tao.OpenGl, Version=2.1.0.12, Culture=neutral, PublicKeyToken=1ca010269a4501ef, processorArchitecture=MSIL" />
+  </ItemGroup>
+</Project>
